@@ -1,0 +1,430 @@
+
+body {
+    background-image: linear-gradient(to top, 
+    #00000011, 
+    #00000010),
+    url("Google pixel 6.webp");
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Includes both Title & description & background of header container */
+header {
+    text-align: center; 
+    max-width: 40%;
+    color:rgb(9, 255, 0);
+    background-color: rgba(1, 1, 14, 0.8); 
+    border-radius: 6vw;
+    margin: 1rem auto;
+/* For proper sizing of header container */
+    height: auto;
+}
+
+/* Only for Title */
+.title {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    padding-top: 1rem;
+    font-weight: 700;
+    font-size: 2.6vw;
+}
+
+/* Only for Description */
+.description {
+    font-family: 'Andada Pro', serif;
+    font-weight: 400;
+    font-size: 1.7vw;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+/* For Form width, background, margin, text color, etc.  */
+form {
+    margin: 13vw auto auto auto;
+    width: 45vw;
+    background-color: hsla(240, 75.8%, 12.9%, 0.7);
+	color: #f5f6f7;
+    padding: 2vw 3vw;
+    border-radius: 1vw;
+}
+
+/* for 1st <p> element */
+.mandatory-condition {
+    font-size: 1.4vw;
+}
+
+/* for giving each option their own block, else all become inline */
+label {
+    display: block;
+}
+
+/* For making input & textarea's available width equal to other elements */
+input, textarea {
+    box-sizing: border-box;
+}
+
+/* For all the question sentences */
+.questions {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 1.7vw;
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1%;
+/* For proper height & spacing between each question line */
+    line-height: 1.7;
+}
+
+/* For making font-size of hints (after questions) smaller than size of question text*/
+.hint {
+    font-size: 1.4vw;
+    margin-left: 0.3rem;
+}
+
+/* For inputs of Name, Email, Age, Dropdown menu-1 & 2 */
+.display-1 {
+    display: block;
+    width: 100%;
+    margin-top: 1%;
+    line-height: 1.7;
+}
+
+/* For fonts of inputs of Name, Email, Age & options(of questions) */
+.option-answer {
+    font-family: 'Andada Pro', serif;
+    font-weight: 500;
+    font-size: 1.5vw;    
+    border-radius: 0.4vw;
+/* For input block height/ separating options neatly */
+    line-height: 1.7;
+} 
+
+/* For input buttons height & width- radios, checkboxes */
+[type="radio"], [type="checkbox"] {
+    height: 1.3vw;
+    width: 1.3vw;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* For giving height & padding to dropdown options */
+#dropdown1, #dropdown2 {
+    min-height: 1vw;
+    width: 100%;
+    padding: 0.4em;
+}
+
+textarea {
+    font-family: 'Andada Pro', serif;
+    font-weight: 500;
+    font-size: 1.5vw;
+    width: 100%;
+    margin: 0.1rem auto;
+}
+
+/* For Submit Button */
+#submit {
+    display: block;
+    margin-top: 3rem;
+    width: 100%;
+    color: #f5f6f7;
+    background-color: rgb(110, 0, 0);
+    min-height: 4vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5vw;
+    border: none;
+    border-radius: 0.2vw;
+}
+#submit:hover, #submit:active {
+    background-color: red;
+    color: black;
+    cursor: pointer;
+}
+
+/*      <---    Media Queries starting      --->      */
+
+/* Media query for device width 480px & below */
+@media screen and (max-width: 480px) {
+    #header {
+        height: auto;
+        width: auto;
+        max-width: 90%;
+        margin: 1rem auto;
+        border-radius: 5rem;
+    }
+    #title {
+        margin: 0 auto;
+        padding-top: 1rem;
+        font-size: 1.5rem;
+    }
+    #description {
+        font-size: 1rem;
+        margin: 0 auto;
+        padding-bottom: 1rem;
+    }
+    .mandatory-condition {
+        font-size: 1rem;
+    }
+}
+
+/* Media query for device width between 480px & 599px */
+@media screen and (max-width: 599px) { 
+    header {
+        height: auto;
+        width: auto;
+        max-width: 80%;
+        margin: 1em auto;
+        border-radius: 5rem;
+    }
+    .title {
+        margin: 0 auto;
+        font-size: 1.8rem;
+    }
+    .description {
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
+    form {
+        width: 70vw;
+    }
+    .mandatory-condition {
+        font-size: 1rem;
+    }
+    .questions {
+        font-size: 1.1rem;
+    }
+    .hint {
+        font-size: 0.9rem;
+    }
+    /* For proper sizing of options & dropdown menus */
+    .option-answer, .option-answer > *{ 
+        font-size: 1rem;
+    }
+    
+    /* For proper sizing of radio buttons & checkboxes */
+    [type="radio"], [type="checkbox"] {
+        height: 1rem;
+        width: 1rem;
+    }
+    textarea {
+        font-size: 1rem;
+    }
+    #submit {
+        font-size: 1rem;
+        padding: 0.8rem;
+        margin-top: 2.5rem;
+    }
+}
+
+/* Media query for device width between 600px & 899px */
+@media (min-width: 600px) and (max-width: 899px) {
+    header {
+        height: auto;
+        width: auto;
+        max-width: 75%;
+        margin: 1em auto;
+        border-radius: 5rem;
+    }
+    .title {
+        margin: 0 auto;
+        font-size: 1.9rem;
+    }
+    .description {
+        margin: 0 auto;
+        font-size: 1.3rem;
+    }
+    form {
+        width: 60vw;
+    }
+    .mandatory-condition {
+        font-size: 1.05rem;
+    }
+    .questions {
+        font-size: 1.2rem;
+    }
+    .hint {
+        font-size: 1rem;
+    }
+    /* For proper sizing of options & dropdown menus */
+    .option-answer, .option-answer > *{ 
+        font-size: 1.1rem;
+    }
+    
+    /* For proper sizing of radio buttons & checkboxes */
+    [type="radio"], [type="checkbox"] {
+        height: 1.05rem;
+        width: 1.05rem;
+    }
+    textarea {
+        font-size: 1.1rem;
+    }
+    #submit {
+        font-size: 1.1rem;
+        padding: 0.8em;
+        margin-top: 2.5rem;
+    }
+}
+
+/* Media query for device width between 900px & 1199px */
+@media (min-width: 900px) and (max-width: 1199px) {
+    header {
+        height: auto;
+        width: auto;
+        max-width: 50%;
+        margin: 2em auto;
+        border-radius: 5rem;
+    }
+    .title {
+        margin: 0 auto;
+        font-size: 2rem;
+    }
+    .description {
+        margin: 0 auto;
+        font-size: 1.4rem;
+    }
+    form {
+        width: 50vw;
+    }
+    .mandatory-condition {
+        font-size: 1.1rem;
+    }
+    .questions {
+        font-size: 1.3rem;
+    }
+    .hint {
+        font-size: 1.1rem;
+    }
+    /* For proper sizing of options & dropdown menus */
+    .option-answer, .option-answer > *{ 
+        font-size: 1.2rem;
+    }
+    
+    /* For proper sizing of radio buttons & checkboxes */
+    [type="radio"], [type="checkbox"] {
+        height: 1.1rem;
+        width: 1.1rem;
+    }
+    textarea {
+        font-size: 1.2rem;
+    }
+    #submit {
+        font-size: 1.2rem;
+        padding: 0.8em;
+        margin-top: 2.5rem;
+    }
+}
+
+/* Media query for device width between 1200px & 1799px */
+@media (min-width: 1200px) and (max-width: 1799px) {
+    header {
+        height: auto;
+        width: auto;
+        max-width: 45%;
+        margin: 3em auto;
+        border-radius: 5rem;
+    }
+    .title {
+        margin: 0 auto;
+        font-size: 2.3rem;
+    }
+    .description {
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+    form {
+        width: 50vw;
+    }
+    .mandatory-condition {
+        font-size: 1.3rem;
+    }
+    .questions {
+        font-size: 1.5rem;
+    }
+    .hint {
+        font-size: 1.3rem;
+    }
+    /* for proper height of input fields of Name, email & age */
+    * > .display-1 {
+        line-height: 2;
+    }
+    /* For proper sizing of options & dropdown menus */
+    .option-answer, .option-answer > *{ 
+        font-size: 1.4rem;
+    }
+    
+    /* For proper sizing of radio buttons & checkboxes */
+    [type="radio"], [type="checkbox"] {
+        height: 1.3rem;
+        width: 1.3rem;
+    }
+    textarea {
+        font-size: 1.4rem;
+    }
+    #submit {
+        font-size: 1.4rem;
+        padding: 0.8em;
+        margin-top: 4.5rem;
+    }
+}
+
+/* Media query for device width 1800px & above */
+@media (min-width: 1800px) { 
+    header {
+        height: auto;
+        width: auto;
+        max-width: 40%;
+        margin: 5em auto;
+        border-radius: 5rem;
+    }
+    .title {
+        margin: 0 auto;
+        font-size: 3rem;
+    }
+    .description {
+        margin: 0 auto;
+        font-size: 2rem;
+    }
+    form {
+        width: 50vw;
+    }
+    .mandatory-condition {
+        font-size: 1.7rem;
+    }
+    .questions {
+        font-size: 2rem;
+        /* For proper height & spacing between each question line */
+        line-height: 2.5;
+        padding-top: 2rem;
+    }
+    
+    .hint {
+        font-size: 1.7rem;
+    }
+    /* for proper height of input fields of Name, email & age */
+    .display-1 {
+        line-height: 2.5;
+    }
+    /* For proper sizing of options & dropdown menus */
+    .option-answer, .option-answer > *{ 
+        font-size: 1.9rem;
+    }
+    
+    /* For proper sizing of radio buttons & checkboxes */
+    [type="radio"], [type="checkbox"] {
+        height: 1.8rem;
+        width: 1.8rem;
+    }
+    textarea {
+        font-size: 1.9rem;
+    }
+    #submit {
+        font-size: 1.9rem;
+        padding: 0.8em;
+        margin-top: 6.5rem;
+    }
+}
+
+
+/*      <----       END of CSS      ---->      */

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google Pixel 6 Survey Form</title>
+        <!-- Import Normalizing CSS -->
+        <link href="Normalize.css" rel="stylesheet" type="text/css">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <!-- Importing Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@1,400;1,500&family=Roboto:wght@700&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <main>
+
+            <!-- Visible title of the page -->
+            <header id="header">
+                <h1 id="title" class="title">Google Pixel 6 Survey Form</h1>
+                <h3 id="description" class="description" >Thank you for making our products better :)</h3>
+            </header>
+
+            <!-- Form starting -->
+            <form id="survey-form">
+                <p class="mandatory-condition">Fields with (*) are mandatory.</p>
+                <!-- Taking User details -->
+                <div>
+                    <label id="name-label" for="name" class="questions">Name *
+                    <input 
+                    id="name"                     
+                    type="text" 
+                    name="name"
+                    class="option-answer display-1"                     
+                    placeholder="  Enter your name" 
+                    required>
+                    </label>
+                </div>
+                
+                <div>
+                    <label id="email-label" for="email" class="questions">Email *
+                    <input 
+                    id="email"                     
+                    type="email" 
+                    name="email"
+                    class="option-answer display-1"                     
+                    placeholder="  Enter your e-mail" 
+                    required>
+                    </label>
+                </div>
+
+                <div>
+                    <label id="number-label" for="number" class="questions">Age
+                    <span class="hint"> (optional)</span>
+                    <input 
+                    id="number"                     
+                    type="number" 
+                    name="age" 
+                    class="option-answer display-1"
+                    placeholder="  Enter age if you like" 
+                    min="15" 
+                    max="90">
+                    </label>
+                </div>
+
+                <!-- User's Feedback-->
+                <p class="questions">Would you recommend to buy Google Pixel to a friend?</p>
+                <div class="option-answer">  
+                    <label>
+                        <input type="radio" name="recommend-buy" value="definitely">
+                        Definitely! Why Not?
+                    </label>
+                    <label>
+                        <input type="radio" name="recommend-buy" value="probably">
+                        Probably
+                    </label>
+                    <label>
+                        <input type="radio" name="recommend-buy" value="don't know">
+                        I don't know
+                    </label>
+                    <label>
+                        <input type="radio" name="recommend-buy" value="no">
+                        No Way!
+                    </label>    
+                </div>
+
+                <div>
+                    <p class="questions">What is your favourite thing about Pixel 6/Pixel 6 Pro? *</p>
+                    <select id="dropdown2" name="favourite" class="option-answer display-1" required>
+                        <option disabled selected value="">Select one</option>
+                        <option value="Display">Display</option>
+                        <option value="Processor">Processor</option>
+                        <option value="Camera">Camera</option>
+                        <option value="Battery">Battery</option>
+                        <option value="Design">Design</option>
+                    </select>
+                </div>
+
+                <p class="questions">What would you like to see improved even further?
+                <span class="hint"> (Check all that apply)</span></p>
+                <div class="option-answer">
+                    <label>
+                        <input type="checkbox" value="Rear Camera">
+                        Rear Camera
+                    </label>
+                    <label>
+                        <input type="checkbox" value="Front Camera">
+                        Front Camera
+                    </label>
+                    <label>
+                        <input type="checkbox" value="Display">
+                        Display
+                    </label>
+                    <label>
+                        <input type="checkbox" value="RAM">
+                        RAM
+                    </label>
+                    <label>
+                        <input type="checkbox" value="Storage">
+                        Storage
+                    </label>
+                    <label>
+                        <input type="checkbox" value="Battery">
+                        Battery
+                    </label>
+                    <label>
+                        <input type="checkbox" value="Design">
+                        Design
+                    </label>
+                    <label>
+                        <input type="checkbox" value="Availabilty in more Colors">
+                        Availabilty in more Colors
+                    </label>
+                </div>
+
+                <div>
+                    <p id="best-phone" class="questions">Which one is the best Phone? *</p>
+                    <select id="dropdown1" class="option-answer display-1" required>
+                        <option disabled selected value="">Select one</option>
+                        <option value="Google Pixel 6 Pro">Google Pixel 6 Pro</option>
+                        <option value="Google Pixel 6">Google Pixel 6</option>
+                        <option value="Iphone 13 Pro">Iphone 13 Pro</option>
+                        <option value="Iphone 13">Iphone 13</option>
+                        <option value="Samsung S22 Ultra">Samsung Galaxy S22 Ultra</option>
+                        <option value="Samsung S22">Samsung Galaxy S22</option>
+                        <option value="OnePlus 10">OnePlus 10 Pro</option>
+                        <option value="Real Me GT2">Real Me GT2 Pro</option>
+                        <option value="Xiaomi 12">Xiaomi 12 Pro</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <!-- Comments or suggestions by the user -->
+                <div>
+                    <p class="questions">Any comments or suggestions?</p>
+                    <textarea                     
+                    rows="5" 
+                    cols="30" 
+                    placeholder="  Enter your comments here..."></textarea>                 
+                </div>
+
+                <!-- Submit Button -->
+                <div>
+                    <button id="submit" type="submit" value="Submit">
+                    Submit
+                    </button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
